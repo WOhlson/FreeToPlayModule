@@ -2,7 +2,9 @@
 CREATE TABLE Organizer
 (
   O_ID INT NOT NULL,
-  Organizer_name VARCHAR(50) NOT NULL,
+  Organizer_name VARCHAR(20) NOT NULL,
+  Password VARCHAR(20) NOT NULL,
+  Username VARCHAR(20) NOT NULL,
   PRIMARY KEY (O_ID)
 );
 
@@ -38,9 +40,7 @@ CREATE TABLE Tournament_Dates
 
 CREATE TABLE Player
 (
-  Password VARCHAR(20) NOT NULL,
-  Username VARCHAR(20) NOT NULL,
-  Display_Name VARCHAR(20) NOT NULL,
+  Player_Name VARCHAR(20) NOT NULL,
   Seed INT NOT NULL,
   P_ID INT NOT NULL,
   T_ID INT NOT NULL,
@@ -49,7 +49,6 @@ CREATE TABLE Player
   FOREIGN KEY (T_ID) REFERENCES Tournament(T_ID),
   FOREIGN KEY (M_ID) REFERENCES Matches(M_ID)
 );
-
 
 
 # Inserting data into the table for debugging (it seems like the dependancies on matches and Tournament are wrong, as 
