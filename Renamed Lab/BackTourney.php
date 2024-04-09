@@ -7,7 +7,7 @@ $password = $_POST["pass"];
 
 
 // Create connection #servername, username, password, db 
-$conn = mysqli_connect("localhost", "root", "","class");
+$conn = mysqli_connect("localhost", "root", "","freetoplay");
 // Check connection
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
@@ -22,7 +22,7 @@ if (!$conn) {
 // $password = mysqli_real_escape_string($conn, $password);
 
 
-$sql = "SELECT username, password  FROM user_info where username='$username' and password= '$password'";
+$sql = "SELECT Username, Password FROM Player where Username='$username' and Password= '$password'";
 $result = $conn->query($sql);
 $check =mysqli_fetch_array($result);
 

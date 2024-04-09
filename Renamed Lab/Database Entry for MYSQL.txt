@@ -52,10 +52,12 @@ CREATE TABLE Player
 
 
 
-# Inserting data into the Player table (left over from the lab, but useful to show blueprint for insertion)
-INSERT INTO Player (username, password) VALUES 
-('alice', 'pass1'),
-('bob', 'pass2'),
-('charlie', 'pass3'),
-('david', 'pass4'),
-('eve', 'pass5');
+# Inserting data into the table for debugging (it seems like the dependancies on matches and Tournament are wrong, as 
+nothing could be added to Player without my first inserting those two pieces of data)
+INSERT INTO Organizer (O_ID, Organizer_name) VALUES (1, 'My Organizer');
+
+INSERT INTO Tournament (T_ID, Tment_Name, O_ID) VALUES (1, 'My Tournament', 1);
+
+INSERT INTO Matches (Round, Winner, Date, Hour, Minute, M_ID, T_ID) VALUES (1, 'Winner', '2024-04-10', 1, 1, 1, 1);
+
+INSERT INTO Player (Username, Password, T_ID, M_ID) VALUES ('alice', 'pass1', 1, 1);
