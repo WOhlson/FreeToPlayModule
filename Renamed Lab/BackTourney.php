@@ -36,7 +36,10 @@ else
 	echo 'failure';
 }
 
-
+function createAccount($newUser, $newPass, $newName)
+{
+	$newSQL = "INSERT INTO player (Password, Username, Display_Name, P_ID) VALUES ('$newPass', '$newUser', '$newName', ((SELECT MAX(P_ID) FROM Player) + 1))";
+})"
 
 
 ?>
