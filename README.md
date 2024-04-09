@@ -12,9 +12,15 @@ For the bare minimum, this will all be displayed in one page. The login will dis
 
 Extra goals for this: 1 = important, 2 = less important, 3= not important
 1 Add dedicated webpage for logging in
+
 2 Add dedicated webpage to hold user info
+
 1 Add way for user class to select tournament going on
+
 1 Add way for tournaments to be named
+
 2 Add tournament customization
+
 2 Allow for dynamic bracket size depending on number of entrants
+
 3 display special winner screen at the end of bracket
