@@ -7,7 +7,7 @@ $password = $_POST["pass"];
 
 
 // Create connection #servername, username, password, db 
-$conn = mysqli_connect("localhost", "root", "","tourney2");
+$conn = mysqli_connect("localhost", "root", "","freetoplay");
 // Check connection
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
