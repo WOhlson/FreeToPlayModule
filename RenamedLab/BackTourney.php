@@ -36,4 +36,10 @@ else
 	echo 'failure';
 }
 
+function createPlayer($newName, $newSeed)
+{
+	$newSQL = "INSERT INTO player (Player_Name, Seed, P_ID) VALUES ('$newName', '$newSeed', (SELECT MAX(P_ID) FROM player) + 1)";
+}
+
+
 ?>
