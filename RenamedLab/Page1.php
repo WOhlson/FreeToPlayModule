@@ -9,7 +9,7 @@
 <body>
 
 	<div id="frm">
-    <form method="post" action="BackTourney.php" >
+    <form method="post" action="Page1Back.php" >
 	
 		<p>
          <center><H1>Create a tournament!
