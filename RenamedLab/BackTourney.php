@@ -29,6 +29,11 @@ $check =mysqli_fetch_array($result);
 if(isset($check)){
 	
 	echo 'success';
+	$newsql = "SELECT Player_Name FROM player";
+        $newresult = $conn->query($newsql);
+	$newdata = mysqli_fetch_array($newresult);
+	$json = json_encode($newdata);
+	echo "<script>var stringData= $json;</script>";
 }
 
 else
