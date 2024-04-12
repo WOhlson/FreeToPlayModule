@@ -12,7 +12,7 @@
     <form method="post" action="BackTourney.php" >
 	
 		<p>
-         <center><H1>Sql injcetion test!
+         <center><H1>Use "myuser" and "mypass" to login!
 		 </center> 
 		 
 		   </p>

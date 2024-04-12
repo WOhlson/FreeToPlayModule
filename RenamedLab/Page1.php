@@ -28,6 +28,58 @@
 
                  </center> 
         </p>
+        <p>
+         <center><H2>Create a Match!
+		 </center> 
+		 
+		   </p>
+         <p>
+		 <center>
+               <label>M_ID</label>
+                    <input type="text" name="mid" id="mid">
+				
+               <label>Round</label>
+                    <input type="text" name="round" id="round">
+
+                <label>Date</label>
+                    <input type="text" name="date" id="date">
+                <br>
+
+                <label>Hour</label>
+                    <input type="text" name="hour" id="hour">
+
+                <label>Minute</label>
+                    <input type="text" name="minute" id="minute">
+        
+              <label>T_ID</label>
+                <input type="text" name="mtid" id="mtid">
+
+                 </center> 
+        </p>
+        <p>
+         <center><H2>Enter a Player!
+		 </center> 
+		 
+		   </p>
+        <p>
+		 <center>
+               <label>P_ID</label>
+                    <input type="text" name="pid" id="pid">
+				
+               <label>Player_Name</label>
+                    <input type="text" name="Pname" id="Pname">
+
+                <label>Seed</label>
+                    <input type="text" name="seed" id="seed">
+
+                <label>M_ID</label>
+                    <input type="text" name="pmid" id="pmid">
+        
+              <label>T_ID</label>
+                <input type="text" name="ptid" id="ptid">
+
+                 </center> 
+        </p>
            <center>
                 <input type="submit" id="btn" value="Submit"/>
                 

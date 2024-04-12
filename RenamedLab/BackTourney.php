@@ -5,7 +5,6 @@ $username = $_POST["user"];
 $password = $_POST["pass"];
 
 
-
 // Create connection #servername, username, password, db 
 $conn = mysqli_connect("localhost", "root", "","tourney2");
 // Check connection
@@ -29,11 +28,17 @@ $check =mysqli_fetch_array($result);
 if(isset($check)){
 	
 	echo 'success';
+	redirect('http://localhost/RenamedLab/Page1.php');
 }
 
 else
 {
 	echo 'failure';
+}
+
+function redirect($url) {
+    header('Location: '.$url);
+    die();
 }
 
 ?>
