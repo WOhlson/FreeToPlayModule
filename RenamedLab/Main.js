@@ -1,4 +1,8 @@
+var stringData = $("#jsondata").val();
 const data = JSON.parse(stringData);
+
+//remove this once we confirm that the above code works
+console.log(data);
 
 const row01 = document.createElement('tr');
 Player1.append(row01);
@@ -92,8 +96,6 @@ main.c.forEach((element)=> {
     container6.append(cell6);
     container7.append(cell7);
     container8.append(cell8);
-
-})
 })
 })
 

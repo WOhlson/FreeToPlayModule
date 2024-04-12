@@ -33,17 +33,12 @@ if(isset($check)){
         $newresult = $conn->query($newsql);
 	$newdata = mysqli_fetch_array($newresult);
 	$json = json_encode($newdata);
-	echo "<script>var stringData= $json;</script>";
+	<input type="hidden" id="jsondata" value="<?php echo $json ?>" />
 }
 
 else
 {
 	echo 'failure';
-}
-
-function createPlayer($newName, $newSeed)
-{
-	$newSQL = "INSERT INTO player (Player_Name, Seed, P_ID) VALUES ('$newName', '$newSeed', (SELECT MAX(P_ID) FROM player) + 1)";
 }
 
 
